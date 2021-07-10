@@ -1,0 +1,44 @@
+.photo-frame{
+    border: 2px solid orchid;
+    border-radius: 10px;
+    height: 225px;
+    width: 300px;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-detail{
+    position: absolute;
+    width: 300px;
+    top: 0;
+    display: none;
+    
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(214, 247, 247, 0.377);
+}
+.photo-detail p ,h3{
+    color: whitesmoke;
+
+}
+h3{
+    text-align: center;
+}
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+.photo-frame:hover .photo{
+    transform: scale(1.7) rotate(360deg);
+    transition: transform 3s ease-in-out;
+    
+}
